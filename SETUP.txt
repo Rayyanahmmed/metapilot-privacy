@@ -1,0 +1,25 @@
+METAPILOT META APP SETUP ASSETS
+
+Included:
+- app-icon-1024.png: square 1024x1024 icon for Meta App Settings > Basic.
+- index.html and privacy-policy.html: the same privacy policy draft for Rayyan Ahmed as an individual FYP developer. index.html lets the repository home URL show the policy.
+- user-data-deletion.html: data deletion instructions page.
+
+Before publishing:
+1) Confirm the contact email in both HTML pages is correct and accessible.
+2) Host the two HTML files at a stable, publicly accessible HTTPS URL. A local path is not a URL. Example URLs after GitHub Pages hosting:
+   https://YOUR-GITHUB-USERNAME.github.io/YOUR-REPO/   (index.html privacy policy)
+   https://YOUR-GITHUB-USERNAME.github.io/YOUR-REPO/privacy-policy.html
+   https://YOUR-GITHUB-USERNAME.github.io/YOUR-REPO/user-data-deletion.html
+   Replace the sample host/repo with your actual values; do not paste these examples literally.
+3) In Meta App Settings > Basic, paste the actual public URLs into Privacy Policy URL and, if requested, User Data Deletion instructions URL.
+4) Upload app-icon-1024.png and choose the category that accurately best describes the app from Meta's dropdown (marketing/business analytics software if available). Category describes the app, not whether you own a registered business.
+5) App Domains are actual hostnames, not descriptions. For the known local/tunnel setup, use:
+   localhost
+   exciting-effort-justness.ngrok-free.dev
+   Do not include https:// or a path in App Domains. The exact redirect URI is a separate setting:
+   https://exciting-effort-justness.ngrok-free.dev/api/v1/meta/callback
+6) For this server-side web app, keep “Native or desktop app?” OFF and “Is app secret embedded in the client?” OFF. Never expose or send the App Secret or access tokens.
+7) Do not publish/submit until all displayed requirements are truthfully completed. The frontend's current “Sync now” button is still demo-only; these assets alone do not wire live OAuth into the UI.
+
+Privacy note: Review the policy against the exact deployed data/AI-provider behavior before publishing. Do not claim data handling that the running app does not actually implement.
